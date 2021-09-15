@@ -15,4 +15,4 @@ app.use((req, res, next) => {
   }
 });
 app.use("/users", userRoute);
-app.listen(4200, () => console.log("server listening at port 4200"));
+app.listen(process.env.PORT||4200, () => console.log("server listening at port 4200"));
